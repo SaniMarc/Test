@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test PhoneGap Build</title>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript">
+  var iNbClick = 0;
+	var sTimes = ' time';
+	function clicked(s){
+		iNbClick += 1;
+		if (iNbClick == 2)
+			sTimes += 's';
+		s.value='Clicked ' + iNbClick + sTimes;
+	}
+</script>
+</head>
+<body>
+    <p>Please press the button.</p>
+    <form>
+        <input type="button" value="Click me" onclick="clicked(this)" />
+    </form>
+</body>
+</html>
